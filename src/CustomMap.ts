@@ -6,7 +6,6 @@ interface Mappable {
   markerContent(): string
 }
 
-
 export class CustomMap {
   private googleMap: google.maps.Map
   constructor(divId:string) {
