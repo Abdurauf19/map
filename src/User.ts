@@ -1,5 +1,4 @@
 import faker from 'faker'
-
  export class User {
   name:string;
   location: {
@@ -12,7 +11,11 @@ import faker from 'faker'
     this.location = {
       lat: parseFloat(faker.address.latitude()),
       lng: parseFloat(faker.address.longitude())
-    }
+    };
+  }
+
+  markerContent(): string {
+    return `User Name:${this.name}`
   }
   
 }
